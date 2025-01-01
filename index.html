@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/7.2.3/css/flag-icons.min.css" integrity="sha512-bZBu2H0+FGFz/stDN/L0k8J0G8qVsAL0ht1qg5kTwtAheiXwiRKyCq1frwfbSFSJN3jooR5kauE0YjtPzhZtJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/favicon_amazon.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+    function showslidebar() {
+        const x = document.querySelector(".slidebar");
+        x.style.display = 'flex'
+    }
+    function hideslidebar() {
+        const x = document.querySelector(".slidebar");
+        x.style.display = 'none'
+    }
+</script>
+</head>
+<body>
+    
+<header>
+
+    <div class="head_contrainer">
+
+<!-- first nav start  -->
+
+        <div class="f-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./images/amazon_logo.png" alt="logo of amazon">
+                </a>
+            </div> 
+
+            <div class="del_ind">
+                <a href="index.html">
+                    <div class="di-icon"> 
+                        <i class="fa-solid fa-location-dot"></i>                    </div>
+                    <h2>Delivery to <br><span>India</span></h2>  
+                </a>
+            </div>
+
+            <div class="search"> 
+                <div class="search_selector">
+                    <span>All</span>
+                    <i class="fa-solid fa-caret-down"></i>                   
+                </div>
+                <input type="text" id="search" placeholder=" Search Amazon">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="flag-en-container">
+                    <img src="./images/flag.png" alt="india flag" width="25px" height="25px">
+                        <select name="select-language" id="lang">
+                            <option value="en"> EN </option>
+                            <option value="hi">HI</option>
+                        </select>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="user-options">
+                    <div class="sign_cat  option">
+                        <span>Hello, Sign in</span>
+                        <p>Account&Lists <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
+                    <div class="R_O-cat  option">
+                       <p>Returns <br>
+                         <span>& Orders</span></p> 
+                    </div>
+                    <div class="cart_cat   option">
+                        <div class="cart_icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="cart_txt">
+                            <p>Cart</p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+
+            <!-- 2nd nav start -->
+
+ <nav class="main-nav">
+        <ul class="non_slidebar">
+            <li class="show" onclick="showslidebar()">
+                     <svg xmlns="http://www.w3.org/2000/svg" height="30px" padding
+                      viewBox="0 -960 960 960" width="40px" fill="white">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            
+            <a class="not_hover" href="#">All</a>
+        </li>
+            <li><a href="#">Today's Deals</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Registry</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Sell</a></li>
+        </ul>
+        <ul class="slidebar">
+            <li class="hidebar"  onclick="hideslidebar()"><a href="#"></a> <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li class="hidebar"><br>
+            <div class="user_signup">
+                <a href="#"> <p class="fa-solid fa-user" style="color: #fcfcfc;"></p> <span> Hello,sign in</span></a>     
+            </div> 
+            </a></li>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Today's Deals</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Registry</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Sell</a></li>
+        </ul>
+    </nav>
+        </div>
+</div>
+</header>
+<main>
+
+    <!-- <section class="hero">
+  
+    </section> -->
+    <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="./images/hero_slider/slider2.jpg" alt="Slide 1"></div>
+                <div class="slide"><img src="./images/hero_slider/slider3.jpg" alt="Slide 2"></div>
+                <div class="slide"><img src="./images/hero_slider/slider1.jpg" alt="Slide 3"></div>
+                <div class="slide"><img src="./images/hero_slider/slider4.jpg" alt="Slide 3"></div>
+                <div class="slide"><img src="./images/hero_slider/slider5.jpg" alt="Slide 3"></div>
+            </div>
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            <div class="slide-msg">
+                <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="">Click here to go to amazon.in</a></p>
+            </div>
+        </div>
+       
+    </div>
+    <script src="amazon.js"></script>
+  </section>
+  <section class="main_products">
+
+<!-- first line boxs start -->
+        <div class="products_container">
+            <div class="product-item  box-1">    
+                <h3><b>Gaming accessories</b></h3><br>
+
+            <div class="boxs-container">  
+                <div class="boxs img1">            
+                    <img src="./images/box_1-1.jpg" alt="img1">
+                    <p>Headsets</p>
+                </div>
+                <div class="boxs img2">
+                    <img src="./images/box_1-2.jpg" alt="img2">
+                    <p>Keyboards</p>
+                </div>
+                <div class="boxs img3">
+                    <img src="./images/box_1-3.jpg" alt="img3">
+                    <p>Computer mice</p>
+                </div>
+                <div class="boxs img4">
+                    <img src="./images/box_1-4.jpg" alt="img4">
+                    <p>Chairs</p>
+                </div>
+            </div>
+            <a href="#">See More...</a>
+            </div>
+
+
+            <div class="product-item  box-2">
+                <h3><b>Refresh your space</b></h3><br>
+            <div class="boxs-container">  
+                <div class="boxs img1">            
+                    <img src="./images/box_2-1.jpg" alt="img1">
+                    <p>Dining</p>
+                </div>
+                <div class="boxs img2">
+                    <img src="./images/box_2-2.jpg" alt="img2">
+                    <p>Home</p>
+                </div>
+                <div class="boxs img3">
+                    <img src="./images/box_2-3.jpg" alt="img3">
+                    <p>Kitchen</p>
+                </div>
+                <div class="boxs img4">
+                    <img src="./images/box_2-4.jpg" alt="img4">
+                    <p>Health & Beauty</p>
+                </div>
+            </div>
+
+                <a href="#">See More...</a>
+            </div>
+
+            <div class="product-item  box-3">
+                 <h3><b>Shop Deals in Fashion</b></h3><br>
+            <div class="boxs-container">  
+                <div class="boxs img1">            
+                    <img src="./images/box_3-1.jpg" alt="img1">
+                    <p>Jeans under $50</p>
+                </div>
+                <div class="boxs img2">
+                    <img src="./images/box_3-2.jpg" alt="img2">
+                    <p>Tops under $25</p>
+                </div>
+                <div class="boxs img3">
+                    <img src="./images/box_3-3.jpg" alt="img3">
+                    <p>Dresses under $30</p>
+                </div>
+                <div class="boxs img4">
+                    <img src="./images/box_3-4.jpg" alt="img4">
+                    <p>Health & Beauty</p>
+                </div>
+            </div>
+
+                <a href="#">See More...</a>
+            </div>
+            <div class="product-item  box-4">
+                <h3><b>New home Arrival under $50</b></h3><br>
+                <div class="boxs-container">  
+                    <div class="boxs img1">            
+                        <img src="./images/box_4-1.jpg" alt="img1">
+                        <p>Kitchen & dining</p>
+                    </div>
+                    <div class="boxs img2">
+                        <img src="./images/box_4-2.jpg" alt="img2">
+                        <p>Home improvement</p>
+                    </div>
+                    <div class="boxs img3">
+                        <img src="./images/box_4-3.jpg" alt="img3">
+                        <p>Decor</p>
+                    </div>
+                    <div class="boxs img4">
+                        <img src="./images/box_4-4.jpg" alt="img4">
+                        <p>Bedding & bath</p>
+                    </div>
+                </div>
+    
+                    <a href="#">See More...</a>
+        </div>
+        </div>
+        <!-- second line boxs start -->
+        <div class="productline-2">
+
+            <div class="product-item  box-5">
+                <h3><b>Deals in PCs</b></h3><br>
+                <div class="boxs-container">
+                    <div class="boxs img1">
+                        <img src="./images/box_5.jpg" alt="img1">
+                    </div>  
+            </div>
+            <a href="#">See More...</a>  
+        </div>
+
+        <div class="product-item  box-6">
+            <h3><b>Toys under $25</b></h3><br>
+            <div class="boxs-container">
+                <div class="boxs img1">
+                    <img src="./images/box_6.jpg" alt="img1">
+                </div>  
+        </div>
+        <a href="#">See More...</a>  
+    </div>
+
+    <div class="product-item  box-7">
+        <h3><b>Get your game on</b></h3><br>
+        <div class="boxs-container">
+            <div class="boxs img1">
+                <img src="./images/box_7.jpg" alt="img1">
+            </div>  
+    </div>
+    <a href="#">See More...</a>  
+</div>
+
+<div class="product-item  box-8">
+    <h3><b>Beauty steals under $25</b></h3><br>
+    <div class="boxs-container">
+        <div class="boxs img1">
+            <img src="./images/box_8(2).jpg" alt="img1">
+        </div>  
+</div>
+<a href="#">See More...</a>  
+</div>
+        </div>
+<!-- 3rd line boxs -->
+
+<div class="box-slider">
+    <br>
+   <h3 style="margin: 0 15px;"><b>Best Sellers in Sports & Outdoors</b></h3> <br>
+     <div class="box-slides">
+         <img src="./images/slider2/s1.jpg" alt="Slide 1">
+         <img src="./images/slider2/s2.jpg" alt="Slide 2">
+         <img src="./images/slider2/s3.jpg" alt="Slide 3">
+         <img src="./images/slider2/s4.jpg" alt="Slide 4">
+         <img src="./images/slider2/s5.jpg" alt="Slide 5">
+         <img src="./images/slider2/s6.jpg" alt="Slide 6">
+         <img src="./images/slider2/s7.jpg" alt="Slide 7">
+         <img src="./images/slider2/s8.jpg" alt="Slide 3">
+         <img src="./images/slider2/s9.jpg" alt="Slide 3">
+         <img src="./images/slider2/s10.jpg" alt="Slide 3">
+         <img src="./images/slider2/s11.jpg" alt="Slide 3">
+         <img src="./images/slider2/s12.jpg" alt="Slide 3">
+         <img src="./images/slider2/s13.jpg" alt="Slide 3">
+         <img src="./images/slider2/s14.jpg" alt="Slide 3">
+         <img src="./images/slider2/s15.jpg" alt="Slide 3">
+     </div>
+    </div>
+  </section>
+</main>
+<div class="signin_conttainer">
+    
+    <div class="signin_content">
+        <p class="head-p">See personalized recommendations</p>
+        <a class="sign-btn" href="">sign in</a>
+        <p>New customer? <a href="">Start here.</a></p>
+    </div>
+  
+</div>
+
+
+<!-- tap to up -->
+<div class="top-btn" id="btn">
+    <button class="top-btn-link"  > Back to Top</button>
+    <script>
+        let mybutton = document.getElementById("btn");
+        mybutton.addEventListener("click", ()=>{
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        })
+    </script>
+</div>
+ <!-- Footer -->
+ <footer class="footer">
+    <div class="footer-links">
+        <div class="column">
+            <h4>Get to Know Us</h4>
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Amazon</a></li>
+                <li><a href="#">Investor Relations</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Make Money with Us</h4>
+            <ul>
+                <li><a href="#">Sell on Amazon</a></li>
+                <li><a href="#">Sell Your Services</a></li>
+                <li><a href="#">Amazon Hub</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Amazon Payment Products</h4>
+            <ul>
+                <li><a href="#">Amazon Credit Cards</a></li>
+                <li><a href="#">Shop with Points</a></li>
+                <li><a href="#">Reload Your Balance</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Let Us Help You</h4>
+            <ul>
+                <li><a href="#">Amazon and COVID-19</a></li>
+                <li><a href="#">Your Orders</a></li>
+                <li><a href="#">Shipping Rates & Policies</a></li>
+            </ul>
+        </div>
+    </div> <br><br>
+    <p> &copy; 2024 Amazon Clone. All rights reserved...</p>
+    <marquee behavior="smooth" direction="left">
+        website cloned by Vikram G
+    </marquee>
+</footer>
+</body>
+</html>
